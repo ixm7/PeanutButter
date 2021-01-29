@@ -50,25 +50,5 @@ namespace PeanutButter.INI
                 : str;
         }
     }
-
-    internal class ParsedLine : IParsedLine
-    {
-        public string Key { get; }
-        public string Value { get; }
-        public string Comment { get; }
-        public bool ContainedEscapedEntities { get; }
-
-        public ParsedLine(
-            string key,
-            string value,
-            string comment,
-            bool containedEscapedEntities
-        )
-        {
-            Key = key;
-            Value = value;
-            Comment = comment;
-            ContainedEscapedEntities = containedEscapedEntities;
-        }
-    }
+ 
 }
